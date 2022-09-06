@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><!--each item layout for recycle view list of numbers category of NumberActivity !-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image_of_item"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/itemImageBackground"
+        android:contentDescription="@null"
+        android:src="@drawable/number_one" />
+
+    <LinearLayout
+        android:id="@+id/words_of_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/category_numbers"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp">
+        <!--tools:text it is an attribute of designtime in tools namespace attributes for just placeholder text in
+         Views to just see how it look like on device it is not showing up in runtime of app because it removed by build tools!-->
+        <TextView
+            android:id="@+id/miwok_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="lutti" />
+
+        <TextView
+            android:id="@+id/default_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:text="one" />
+    </LinearLayout>
+</LinearLayout>

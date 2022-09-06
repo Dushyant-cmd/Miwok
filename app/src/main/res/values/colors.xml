@@ -34,4 +34,9 @@
 
     <!-- Background color for the phrases category -->
     <color name="category_phrases">#16AFCA</color>
+
+    <!--White color !-->
+    <color name="white">#FFFFFF</color>
+    <!--list_item.xml ImageView background color !-->
+    <color name="itemImageBackground">#FFF7DA</color>
 </resources>

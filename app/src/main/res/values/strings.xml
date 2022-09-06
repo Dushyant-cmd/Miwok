@@ -27,4 +27,34 @@
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_family">Family Members</string>
+
+    <!--Category words practice input for user !-->
+    <string name="User_practice">Type word</string>
+    
+    <!--ReportCard text !-->
+    <string name="report_card">Report Card</string>
+
+    <!--These strings for numbers List words in English !-->
+    <string name="englishWord1">one</string>
+    <string name="englishWord2">two</string>
+    <string name="englishWord3">three</string>
+    <string name="englishWord4">four</string>
+    <string name="englishWord5">five</string>
+    <string name="englishWord6">six</string>
+    <string name="englishWord7">seven</string>
+    <string name="englishWord8">eight</string>
+    <string name="englishWord9">nine</string>
+    <string name="englishWord10">ten</string>
+
+    <!--These string resources for miwok number words from 1 to ten !-->
+    <string name="miwok1">lutti</string>
+    <string name="miwok12">otiiko</string>
+    <string name="miwok13">tolooksu</string>
+    <string name="miwok14">oyyisa</string>
+    <string name="miwok15">massokka</string>
+    <string name="miwok16">tammokka</string>
+    <string name="miwok17">kenekaku</string>
+    <string name="miwok18">kawinta</string>
+    <string name="miwok19">wo\'e</string>
+    <string name="miwok110">na\'aacha</string>
 </resources>

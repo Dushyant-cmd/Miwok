@@ -15,8 +15,11 @@
  */
 package com.example.android.miwok;
 
+import android.content.Intent;
 import android.os.Bundle;
-// import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,5 +30,56 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
+        setListeners();
+    }
+
+    private void setListeners() {
+        //This method to set event listeners is very concise and less time consuming instead of create all
+        // new classes.
+
+        //Create object for numbers TextView
+        TextView numberTextView = (TextView) findViewById(R.id.numbers);
+
+        //override(@Override) onClick() method of OnClickListener interface by call back
+        numberTextView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentForNumbers = new Intent(getApplicationContext(), NumbersActivity.class);
+                startActivity(intentForNumbers);
+            }
+        });
+
+        //Object for family TextView
+        TextView familyTextView = (TextView) findViewById(R.id.family);
+        //set click event listener on familyTextView
+        familyTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentForFamily = new Intent(getApplicationContext(), FamilyActivity.class);
+                startActivity(intentForFamily);
+            }
+        });
+
+        //Object for colors TextView
+        TextView colorsTextView = (TextView) findViewById(R.id.colors);
+        //set click event listener on colorsTextView
+        colorsTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentForColors = new Intent(getApplicationContext(), ColorsActivity.class);
+                startActivity(intentForColors);
+            }
+        });
+
+        //Object for phrases TextView
+        TextView phrasesTextView = (TextView) findViewById(R.id.phrases);
+        //set click event listener on phrasesTextView
+        phrasesTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentForPhrases = new Intent(getApplicationContext(), PhrasesActivity.class);
+                startActivity(intentForPhrases);
+            }
+        });
     }
 }

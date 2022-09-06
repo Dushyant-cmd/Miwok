@@ -16,18 +16,23 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/primary_color</item>
+        //action bar primary color
+        <item name="colorPrimary">#4A312A</item>
+        //status bar color
         <item name="colorPrimaryDark">@color/primary_dark_color</item>
+        //all the button colors in app till the Activity have its own style code and specified in AndroidManifest.xml
+        //file by adding android:theme attribute = assigned with reference to style name in styles.xml resource.
+        <item name="colorButtonNormal">@color/tan_background</item>
     </style>
-
     <!-- Style for a category of vocabulary words -->
     <style name="CategoryStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/list_item_height</item>
         <item name="android:gravity">center_vertical</item>
-        <item name="android:padding">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
 </resources>
